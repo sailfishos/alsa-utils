@@ -1,3 +1,7 @@
+* Thu Oct 20 2011 Carsten Munk <carsten@maemo.org> - 1.0.23
+- Drop 'dialog' dependancy, is unneeded and doesn't cause 
+  loss of functionality.
+
 * Mon Apr 18 2011 vivian zhang <vivian.zhang@intel.com> - 1.0.23
 - Merged the patch to fix double free issue if linesize exceeds 2048 (BMC #14656)
 

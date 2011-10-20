@@ -21,7 +21,6 @@ Source5:    alsactl.conf
 Source100:  alsa-utils.yaml
 Patch0:     null-pointer-to-avoid-double-free.patch
 Requires:   alsa-lib >= %{version}
-Requires:   dialog
 BuildRequires:  pkgconfig(alsa) >= %{version}
 BuildRequires:  pkgconfig(ncurses)
 BuildRequires:  gettext-devel

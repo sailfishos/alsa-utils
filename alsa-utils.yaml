@@ -20,7 +20,6 @@ Description: |
 
 Requires:
     - alsa-lib >= %{version}
-    - dialog
 PkgConfigBR:
     - alsa >= %{version}
     - ncurses
