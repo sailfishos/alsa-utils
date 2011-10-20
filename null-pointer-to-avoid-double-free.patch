@@ -1,0 +1,11 @@
+diff -Nur alsa-utils-1.0.23/alsactl/init_parse.c alsa-utils-1.0.23-new/alsactl/init_parse.c
+--- alsa-utils-1.0.23/alsactl/init_parse.c	2010-04-16 19:11:06.000000000 +0800
++++ alsa-utils-1.0.23-new/alsactl/init_parse.c	2011-04-18 21:28:50.337280657 +0800
+@@ -1686,6 +1686,7 @@
+ 			free(line);
+ 			linesize = (count + 127 + 1) & ~127;
+ 			if (linesize > 2048) {
++				line = NULL;
+ 				error("file %s, line %i too long", filename, linenum);
+ 				err = -EINVAL;
+ 				break;

@@ -1,0 +1,38 @@
+Name: alsa-utils
+Summary: Advanced Linux Sound Architecture (ALSA) utilities
+Version: 1.0.23
+Release: 1
+Group: Applications/Multimedia
+License: GPLv2+
+URL: http://www.alsa-project.org/
+Sources:
+    - ftp://ftp.alsa-project.org/pub/utils/alsa-utils-%{version}.tar.bz2
+    - alsaunmute
+    - alsaunmute.1
+    - alsa-info.sh
+    - alsa.rules
+    - alsactl.conf
+Patches:
+    - null-pointer-to-avoid-double-free.patch
+Description: |
+    This package contains command line utilities for the Advanced Linux Sound
+    Architecture (ALSA).
+
+Requires:
+    - alsa-lib >= %{version}
+    - dialog
+PkgConfigBR:
+    - alsa >= %{version}
+    - ncurses
+PkgBR:
+    - gettext-devel
+    - xmlto
+Conflicts:
+    - udev < 062
+Configure: configure
+ConfigOptions:
+    - CFLAGS="$RPM_OPT_FLAGS -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64" 
+    - --sbindir=/sbin 
+    - --disable-alsaconf
+Builder: make
+LocaleName: "%{name}"
