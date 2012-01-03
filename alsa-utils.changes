@@ -1,6 +1,9 @@
-* Thu Oct 20 2011 Carsten Munk <carsten@maemo.org> - 1.0.23
-- Drop 'dialog' dependancy, is unneeded and doesn't cause 
-  loss of functionality.
+* Wed Nov 16 2011 Marko Saukko <marko.saukko@cybercom.com> - 1.0.24.2
+- Dropped xmlto build dep and dialog install dep.
+
+* Fri Sep 2 2011 Jouni Peltonen <jouni.peltonen@cybercom.com> - 1.0.24.2
+- Update to 1.0.24.2
+- alsa_version variable added to spec-file.
 
 * Mon Apr 18 2011 vivian zhang <vivian.zhang@intel.com> - 1.0.23
 - Merged the patch to fix double free issue if linesize exceeds 2048 (BMC #14656)
@@ -12,28 +15,28 @@
 * Thu Jul 15 2010 Anas Nashif <anas.nashif@intel.com> - 1.0.22
 - Install udev rules in /lib/udev (bmc #3424)
 
-* Fri Dec 25 2009 Bin Gao <bin.gao@intel.com> 1.0.22
+* Fri Dec 25 2009 Bin Gao <bin.gao@intel.com> - 1.0.22
 - Update to 1.0.22
 - Dropped 3 patches
 
-* Mon Sep 21 2009 Vivian Zhang <vivian.zhang@intel.com> 1.0.21
+* Mon Sep 21 2009 Vivian Zhang <vivian.zhang@intel.com> - 1.0.21
 - Update to 1.0.21
 - Update alsa-info.sh to 0.4.58
 
-* Wed May 20 2009 Vivian Zhang <vivian.zhang@intel.com> 1.0.20
+* Wed May 20 2009 Vivian Zhang <vivian.zhang@intel.com> - 1.0.20
 - Update to 1.0.20
 - Added LineOut volume in alsactl init to fix #2634
 
-* Mon Mar 16 2009 Vivian Zhang <vivian.zhang@intel.com> 1.0.19
+* Mon Mar 16 2009 Vivian Zhang <vivian.zhang@intel.com> - 1.0.19
 - Fixed error symlink of alsa-info.sh
 
-* Fri Feb 13 2009 Anas Nashif <anas.nashif@intel.com> 1.0.19
+* Fri Feb 13 2009 Anas Nashif <anas.nashif@intel.com> - 1.0.19
 - Update to 1.0.19
 
-* Mon Jan 12 2009 Anas Nashif <anas.nashif@intel.com> 1.0.18
+* Mon Jan 12 2009 Anas Nashif <anas.nashif@intel.com> - 1.0.18
 - Source tag cleanup
 
-* Mon Nov 24 2008 Vivian zhang <vivian.zhang@intel.com> 1.0.18
+* Mon Nov 24 2008 Vivian zhang <vivian.zhang@intel.com> - 1.0.18
 - Update to 1.0.18
 - Added alsa-info.sh script to /usr/bin/alsa-info
 - Changed alsaunmute to use 'alsactl init'
@@ -48,94 +51,94 @@
 * Tue Feb 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.0.16-2
 - Autorebuild for GCC 4.3
 
-* Mon Feb 18 2008 Martin Stransky <stransky@redhat.com> 1.0.16-1
+* Mon Feb 18 2008 Martin Stransky <stransky@redhat.com> - 1.0.16-1
 - updated to 1.0.16 final
 
-* Tue Jan 15 2008 Mikel Ward <mikel@mikelward.com>
+* Tue Jan 15 2008 Mikel Ward <mikel@mikelward.com> - 1.0.15-2
 - add salsa man page
 
-* Mon Oct 29 2007 Martin Stransky <stransky@redhat.com> 1.0.15-1
+* Mon Oct 29 2007 Martin Stransky <stransky@redhat.com> - 1.0.15-1
 - updated to 1.0.15 final
 
-* Mon Oct 1 2007 Martin Stransky <stransky@redhat.com> 1.0.15-0.4.rc1
+* Mon Oct 1 2007 Martin Stransky <stransky@redhat.com> - 1.0.15-0.4.rc1
 - moved saved volume settings back to /etc/alsa
   (per discussion at #293301)
 
-* Mon Sep 24 2007 Martin Stransky <stransky@redhat.com> 1.0.15-0.3.rc1
+* Mon Sep 24 2007 Martin Stransky <stransky@redhat.com> - 1.0.15-0.3.rc1
 - fixed #303151 - wrong salsa dir in /etc/udev/rules.d/90-alsa.rules
 
-* Thu Sep 20 2007 Matthias Saou <http://freshrpms.net/> 1.0.15-0.2.rc1
+* Thu Sep 20 2007 Matthias Saou <http://freshrpms.net/> - 1.0.15-0.2.rc1
 - Update License field.
 - Mark udev rule as config.
 - Use find_lang macro again to include translations (why was it removed?).
 
-* Wed Sep 19 2007 Martin Stransky <stransky@redhat.com> 1.0.15-0.1.rc1
+* Wed Sep 19 2007 Martin Stransky <stransky@redhat.com> - 1.0.15-0.1.rc1
 - new upstream
 - moved saved volume settings to /var/lib (#293301)
 - patched alsactl for that (#255421)
 
-* Thu Aug 16 2007 Martin Stransky <stransky@redhat.com> 1.0.14-2
+* Thu Aug 16 2007 Martin Stransky <stransky@redhat.com> - 1.0.14-2
 - added an entry to alsaunmute for HP xw4550 (#252171)
 
-* Wed Jul 25 2007 Martin Stransky <stransky@redhat.com> 1.0.14-1
+* Wed Jul 25 2007 Martin Stransky <stransky@redhat.com> - 1.0.14-1
 - release bump
 
-* Thu Jun 7 2007 Martin Stransky <stransky@redhat.com> 1.0.14-0.8
+* Thu Jun 7 2007 Martin Stransky <stransky@redhat.com> - 1.0.14-0.8
 - new upstream
 
-* Wed May 30 2007 Martin Stransky <stransky@redhat.com> 1.0.14-0.7.rc2
+* Wed May 30 2007 Martin Stransky <stransky@redhat.com> - 1.0.14-0.7.rc2
 - updated alsanumute for Siemens Lifebook S7020 (#241639)
 - unmute Master Mono for all drivers
 
-* Wed May 2 2007 Martin Stransky <stransky@redhat.com> 1.0.14-0.6.rc2
+* Wed May 2 2007 Martin Stransky <stransky@redhat.com> - 1.0.14-0.6.rc2
 - added fix for #238442 (unmute Mono channel for w4550, 
   xw4600, xw6600, and xw8600)
 
-* Wed Apr 18 2007 Martin Stransky <stransky@redhat.com> 1.0.14-0.5.rc2
+* Wed Apr 18 2007 Martin Stransky <stransky@redhat.com> - 1.0.14-0.5.rc2
 - added more funcionality to salsa (save/load sound settings),
   moved volume settings to /etc/alsa/
 
-* Thu Apr 10 2007 Martin Stransky <stransky@redhat.com> 1.0.14-0.4.rc2
+* Thu Apr 10 2007 Martin Stransky <stransky@redhat.com> - 1.0.14-0.4.rc2
 - added support for large files
 - minor fix in alsaunmute
 - fixed #209239 - alsaconf: Stale language-dependent files
 - fixed #233765 - alsa-utils : unowned directories
 
-* Fri Jan 19 2007 Martin Stransky <stransky@redhat.com> 1.0.14-0.3.rc2
+* Fri Jan 19 2007 Martin Stransky <stransky@redhat.com> - 1.0.14-0.3.rc2
 - new upstream
 
-* Wed Jan 10 2007 Martin Stransky <stransky@redhat.com> 1.0.14-0.2.rc1
+* Wed Jan 10 2007 Martin Stransky <stransky@redhat.com> - 1.0.14-0.2.rc1
 - added a config line for hda-intel driver
 
-* Mon Dec 11 2006 Martin Stransky <stransky@redhat.com> 1.0.14-0.1.rc1
+* Mon Dec 11 2006 Martin Stransky <stransky@redhat.com> - 1.0.14-0.1.rc1
 - new upstream
 
-* Mon Oct 2 2006 Martin Stransky <stransky@redhat.com> 1.0.12-3
+* Mon Oct 2 2006 Martin Stransky <stransky@redhat.com> - 1.0.12-3
 - fix for #207384 - Audio test fails during firstboot
 
-* Fri Aug 25 2006 Martin Stransky <stransky@redhat.com> 1.0.12-2
+* Fri Aug 25 2006 Martin Stransky <stransky@redhat.com> - 1.0.12-2
 - new upstream
 
-* Mon Aug 07 2006 Martin Stransky <stransky@redhat.com> 1.0.12-1.rc2
+* Mon Aug 07 2006 Martin Stransky <stransky@redhat.com> - 1.0.12-1.rc2
 - new upstream
 
-* Thu Jul 20 2006 Martin Stransky <stransky@redhat.com> 1.0.12-1.rc1
+* Thu Jul 20 2006 Martin Stransky <stransky@redhat.com> - 1.0.12-1.rc1
 - new upstream
 
-* Wed Jul 12 2006 Jesse Keating <jkeating@redhat.com> - sh: line 0: fg: no job control
+* Wed Jul 12 2006 Jesse Keating <jkeating@redhat.com> - 1.0.11-8
 - rebuild
 
-* Tue May 30 2006 Martin Stransky <stransky@redhat.com> 1.0.11-7
+* Tue May 30 2006 Martin Stransky <stransky@redhat.com> - 1.0.11-7
 - new upstream
 
-* Wed May 3  2006 Martin Stransky <stransky@redhat.com> 1.0.11-6.rc2
+* Wed May 3  2006 Martin Stransky <stransky@redhat.com> - 1.0.11-6.rc2
 - removed HW specific switch - it should be set by driver
 
-* Thu Apr 6  2006 Martin Stransky <stransky@redhat.com> 1.0.11-5.rc2
+* Thu Apr 6  2006 Martin Stransky <stransky@redhat.com> - 1.0.11-5.rc2
 - fixed rules file (#186494)
 - fixed Audigi mixer switch (#187807)
 
-* Mon Feb 20 2006 Martin Stransky <stransky@redhat.com> 1.0.11-3.rc2
+* Mon Feb 20 2006 Martin Stransky <stransky@redhat.com> - 1.0.11-3.rc2
 - removed autoreconf
 
 * Fri Feb 10 2006 Jesse Keating <jkeating@redhat.com> - 1.0.11-2.rc2.2
@@ -144,119 +147,119 @@
 * Tue Feb 07 2006 Jesse Keating <jkeating@redhat.com> - 1.0.11-2.rc2.1
 - rebuilt for new gcc4.1 snapshot and glibc changes
 
-* Wed Jan 25 2006 Martin Stransky <stransky@redhat.com> 1.0.11-2.rc2
+* Wed Jan 25 2006 Martin Stransky <stransky@redhat.com> - 1.0.11-2.rc2
 - added volume option to alsaunmute utility (for s-c-s)
 
-* Thu Jan 12 2006 Martin Stransky <stransky@redhat.com> 1.0.11-1.rc2
+* Thu Jan 12 2006 Martin Stransky <stransky@redhat.com> - 1.0.11-1.rc2
 - new upstream
 
-* Fri Dec 09 2005 Jesse Keating <jkeating@redhat.com>
+* Fri Dec 09 2005 Jesse Keating <jkeating@redhat.com> - 1.0.10rf-1
 - rebuilt
 
-* Thu Nov 24 2005 Martin Stransky <stransky@redhat.com> 1.0.10rf-1
+* Thu Nov 24 2005 Martin Stransky <stransky@redhat.com> - 1.0.10rf-1
 - new upstream version
 - added alias for snd-azx
 
-* Wed Nov 9 2005 Martin Stransky <stransky@redhat.com> 1.0.10rc1-2
+* Wed Nov 9 2005 Martin Stransky <stransky@redhat.com> - 1.0.10rc1-2
 - fix for #169292 - RHEL4U2 xw4300 IntelHD internal speakers muted by default
 
-* Tue Sep 27 2005 Martin Stransky <stransky@redhat.com> 1.0.10rc1-1
+* Tue Sep 27 2005 Martin Stransky <stransky@redhat.com> - 1.0.10rc1-1
 - new upstream version
 
-* Tue Aug 23 2005 Martin Stransky <stransky@redhat.com> 1.0.9-5
+* Tue Aug 23 2005 Martin Stransky <stransky@redhat.com> - 1.0.9-5
 - unmute External Amplifier by default (#166153)
 
-* Wed Jul 13 2005 Bill Nottingham <notting@redhat.com> 1.0.9-4
+* Wed Jul 13 2005 Bill Nottingham <notting@redhat.com> - 1.0.9-4
 - migrate the alsa restore program to a udev rule, not a dev.d program
 - conflict with appropriate udev
 - move alsaunmute, alsacard to /bin
 
-* Mon Jul 11 2005 Martin Stransky <stransky@redhat.com> 1.0.9-3
+* Mon Jul 11 2005 Martin Stransky <stransky@redhat.com> - 1.0.9-3
 - New alsaunmute utility
 - Add autoconf to BuildRequires (#162483)
 
-* Thu Jun 16 2005 Martin Stransky <stransky@redhat.com> 1.0.9-2
+* Thu Jun 16 2005 Martin Stransky <stransky@redhat.com> - 1.0.9-2
 - New upstream version
 
-* Mon May 30 2005 Martin Stransky <stransky@redhat.com> 1.0.9-1
+* Mon May 30 2005 Martin Stransky <stransky@redhat.com> - 1.0.9-1
 - New upstream version.
 - moved alsacard utility from alsa-lib to alsa-tools
 
-* Mon May 16 2005 Bill Nottingham <notting@redhat.com> 1.0.9rc2-2
+* Mon May 16 2005 Bill Nottingham <notting@redhat.com> - 1.0.9rc2-2
 - make sure 'Wave' playback channel isn't muted (#157850)
 
-* Mon Apr 25 2005 Martin Stransky <stransky@redhat.com> 1.0.9rc2-1
+* Mon Apr 25 2005 Martin Stransky <stransky@redhat.com> - 1.0.9rc2-1
 - New upstream version
 - add %%find_lang macro (#155719)
 
-* Fri Apr 1 2005 Bill Nottingham <notting@redhat.com> 1.0.8-4
+* Fri Apr 1 2005 Bill Nottingham <notting@redhat.com> - 1.0.8-4
 - replace the dev.d script with a program that calls alsactl to
   restore the volume if there is a saved config, and just unmutes
   the playback channels if there isn't one (#132575)
 
-* Mon Mar 7 2005 Martin Stransky <stransky@redhat.com>
+* Mon Mar 7 2005 Martin Stransky <stransky@redhat.com> - 1.0.8-3
 - rebuilt
 
-* Wed Feb 16 2005 Martin Stransky <stransky@redhat.com> 1.0.8-2
+* Wed Feb 16 2005 Martin Stransky <stransky@redhat.com> - 1.0.8-2
 - fix #148011 (add gettext-devel to BuildRequires)
 - add $RPM_OPT_FLAGS to CFLAGS
 
-* Wed Jan 26 2005 Martin Stransky <stransky@redhat.com> 1.0.8-1
+* Wed Jan 26 2005 Martin Stransky <stransky@redhat.com> - 1.0.8-1
 - update to 1.0.8
 - temporarily removed alsa-lauch.patch
 
-* Sat Jan 08 2005 Colin Walters <walters@redhat.com> 1.0.7-2
+* Sat Jan 08 2005 Colin Walters <walters@redhat.com> - 1.0.7-2
 - New patch alsa-utils-1.0.7-alsa-launch.patch, adds the
   alsa-launch command.
 - New source file xinit-alsa-launch.sh, integrates alsa-launch
   into X startup
 - BR xorg-x11-devel
 
-* Thu Jan 06 2005 Colin Walters <walters@redhat.com> 1.0.7-1
+* Thu Jan 06 2005 Colin Walters <walters@redhat.com> - 1.0.7-1
 - New upstream version
 
-* Tue Oct 19 2004 Bill Nottingham <notting@redhat.com> 1.0.6-3
+* Tue Oct 19 2004 Bill Nottingham <notting@redhat.com> - 1.0.6-3
 - tweak dev.d sound restore script (#133535, revisited)
 
-* Thu Oct 14 2004 Bill Nottingham <notting@redhat.com> 1.0.6-2
+* Thu Oct 14 2004 Bill Nottingham <notting@redhat.com> - 1.0.6-2
 - move alsactl to /sbin
 - include a dev.d script for mixer restoring (#133535)
 
-* Mon Aug 30 2004 Bill Nottingham <notting@redhat.com> 1.0.6-1
+* Mon Aug 30 2004 Bill Nottingham <notting@redhat.com> - 1.0.6-1
 - update to 1.0.6
 
-* Fri Jul  2 2004 Bill Nottingham <notting@redhat.com> 1.0.5-1
+* Fri Jul  2 2004 Bill Nottingham <notting@redhat.com> - 1.0.5-1
 - update to 1.0.5
 
-* Tue Jun 15 2004 Elliot Lee <sopwith@redhat.com>
+* Tue Jun 15 2004 Elliot Lee <sopwith@redhat.com> - 1.0.3-2
 - rebuilt
 
-* Thu Mar 11 2004 Bill Nottingham <notting@redhat.com> 1.0.3-1
+* Thu Mar 11 2004 Bill Nottingham <notting@redhat.com> - 1.0.3-1
 - update to 1.0.3
 
-* Fri Feb 13 2004 Elliot Lee <sopwith@redhat.com>
+* Fri Feb 13 2004 Elliot Lee <sopwith@redhat.com> - 1.0.2-2
 - rebuilt
 
-* Wed Jan 28 2004 Bill Nottingham <notting@redhat.com> 1.0.2-1
+* Wed Jan 28 2004 Bill Nottingham <notting@redhat.com> - 1.0.2-1
 - update to 1.0.2
 
-* Wed Dec 17 2003 Bill Nottingham <notting@redhat.com> 1.0.0-0.rc2
+* Wed Dec 17 2003 Bill Nottingham <notting@redhat.com> - 1.0.0-0.rc2
 - import fedora.us RPM, take out save-alsamixer & alsaconf for now
 
-* Thu Dec 11 2003 Thorsten Leemhuis <fedora[AT]leemhuis.info> 1.0.0-0.fdr.0.4.rc2
+* Thu Dec 11 2003 Thorsten Leemhuis <fedora[AT]leemhuis.info> - 1.0.0-0.fdr.0.4.rc2
 - rename alsamixer-saver save-alsamixer
 
-* Mon Dec  8 2003 Thorsten Leemhuis <fedora[AT]leemhuis.info> 1.0.0-0.fdr.0.3.rc2
+* Mon Dec  8 2003 Thorsten Leemhuis <fedora[AT]leemhuis.info> - 1.0.0-0.fdr.0.3.rc2
 - Integrate Michael Schwendt's script alsamixer-saver; Still not quite sure if 
   this script is the right way -- but mine didn't work...
 
-* Sat Dec  6 2003 Thorsten Leemhuis <fedora[AT]leemhuis.info> 1.0.0-0.fdr.0.2.rc2
+* Sat Dec  6 2003 Thorsten Leemhuis <fedora[AT]leemhuis.info> - 1.0.0-0.fdr.0.2.rc2
 - Update to 1.0.0rc2 
 - added alsamixer Script -- stores settings on shutdown, does nothing on startup
 - some minor corrections in spec-file style
 
-* Wed Dec  3 2003 Thorsten Leemhuis <fedora[AT]leemhuis.info> 1.0.0-0.fdr.0.1.rc1
+* Wed Dec  3 2003 Thorsten Leemhuis <fedora[AT]leemhuis.info> - 1.0.0-0.fdr.0.1.rc1
 - Update to 1.0.0rc1 
 
-* Wed Aug  6 2003 Dams <anvil[AT]livna.org> 0:utils-0.fdr.1
+* Wed Aug  6 2003 Dams <anvil[AT]livna.org> - 0:utils-0.fdr.1
 - Initial build.

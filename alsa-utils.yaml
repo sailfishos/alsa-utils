@@ -1,6 +1,6 @@
 Name: alsa-utils
 Summary: Advanced Linux Sound Architecture (ALSA) utilities
-Version: 1.0.23
+Version: 1.0.24.2
 Release: 1
 Group: Applications/Multimedia
 License: GPLv2+
@@ -19,13 +19,12 @@ Description: |
     Architecture (ALSA).
 
 Requires:
-    - alsa-lib >= %{version}
+    - alsa-lib >= %{alsa_version}
 PkgConfigBR:
-    - alsa >= %{version}
+    - alsa >= %{alsa_version}
     - ncurses
 PkgBR:
     - gettext-devel
-    - xmlto
 Conflicts:
     - udev < 062
 Configure: configure
@@ -33,5 +32,6 @@ ConfigOptions:
     - CFLAGS="$RPM_OPT_FLAGS -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64" 
     - --sbindir=/sbin 
     - --disable-alsaconf
+    - --disable-xmlto
 Builder: make
 LocaleName: "%{name}"
