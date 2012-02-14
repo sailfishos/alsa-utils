@@ -1,3 +1,6 @@
+* Tue Feb 14 2012 Marko Saukko <marko.saukko@gmail.com> - 1.0.25
+- Update to version 1.0.25
+
 * Wed Nov 16 2011 Marko Saukko <marko.saukko@cybercom.com> - 1.0.24.2
 - Dropped xmlto build dep and dialog install dep.
 
