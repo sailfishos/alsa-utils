@@ -104,7 +104,7 @@
 - added more funcionality to salsa (save/load sound settings),
   moved volume settings to /etc/alsa/
 
-* Thu Apr 10 2007 Martin Stransky <stransky@redhat.com> - 1.0.14-0.4.rc2
+* Tue Apr 10 2007 Martin Stransky <stransky@redhat.com> - 1.0.14-0.4.rc2
 - added support for large files
 - minor fix in alsaunmute
 - fixed #209239 - alsaconf: Stale language-dependent files
