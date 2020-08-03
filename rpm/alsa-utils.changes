@@ -73,7 +73,7 @@
 * Mon Sep 24 2007 Martin Stransky <stransky@redhat.com> - 1.0.15-0.3.rc1
 - fixed #303151 - wrong salsa dir in /etc/udev/rules.d/90-alsa.rules
 
-* Thu Sep 20 2007 Matthias Saou <http://freshrpms.net/> - 1.0.15-0.2.rc1
+* Thu Sep 20 2007 Matthias Saou <matthias.saou@est.une.marmotte.net> - 1.0.15-0.2.rc1
 - Update License field.
 - Mark udev rule as config.
 - Use find_lang macro again to include translations (why was it removed?).
