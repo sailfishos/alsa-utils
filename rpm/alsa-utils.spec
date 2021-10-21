@@ -17,9 +17,9 @@ BuildRequires:  autoconf
 BuildRequires:  automake
 BuildRequires:  libtool
 BuildRequires:  pkgconfig(alsa) >= %{alsa_version}
+BuildRequires:  pkgconfig(systemd)
 BuildRequires:  pkgconfig(ncurses)
 BuildRequires:  gettext-devel
-BuildRequires:  systemd-devel
 Conflicts:  udev < 062
 
 %description
