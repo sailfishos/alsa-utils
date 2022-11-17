@@ -2,6 +2,6 @@
 
 exec /usr/sbin/alsactl \
   -E ALSA_CONFIG_PATH=/etc/alsa/alsactl.conf \
-  --initfile=/lib/alsa/init/00main \
+  --initfile=/usr/lib/alsa/init/00main \
   init
 
