@@ -78,7 +78,8 @@ fi
 
 %files -f %{name}.lang
 %defattr(-,root,root,-)
-%doc COPYING README.md
+%license COPYING
+%doc README.md
 %{_udevrulesdir}/*
 %config %{_sysconfdir}/alsa/*
 %{alsacfgdir}/init/*
