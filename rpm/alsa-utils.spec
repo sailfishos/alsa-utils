@@ -5,7 +5,7 @@ Name:       alsa-utils
 %global alsacfgdir %{_prefix}/lib/alsa
 
 Summary:    Advanced Linux Sound Architecture (ALSA) utilities
-Version:    1.2.8
+Version:    1.2.13
 Release:    1
 License:    GPLv2+
 URL:        http://www.alsa-project.org/
@@ -63,7 +63,7 @@ mkdir -p -m 755 %{buildroot}%{alsacfgdir}
 mv %{buildroot}%{_datadir}/alsa/init %{buildroot}%{alsacfgdir}
 
 # Link /usr/lib/alsa/init to /usr/share/alsa/init back
-ln -s ../../lib/init %{buildroot}%{_datadir}/alsa/init
+ln -s ../../lib/alsa/init %{buildroot}%{_datadir}/alsa/init
 
 # Create a place for global configuration
 install -D -p -m 644 %{SOURCE5} %{buildroot}%{_sysconfdir}/alsa/alsactl.conf
@@ -77,7 +77,6 @@ mv %{_sysconfdir}/alsa/asound.state %{_sysconfdir}/asound.state
 fi
 
 %files -f %{name}.lang
-%defattr(-,root,root,-)
 %license COPYING
 %doc README.md
 %{_udevrulesdir}/*
