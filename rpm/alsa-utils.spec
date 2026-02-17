@@ -5,10 +5,10 @@ Name:       alsa-utils
 %global alsacfgdir %{_prefix}/lib/alsa
 
 Summary:    Advanced Linux Sound Architecture (ALSA) utilities
-Version:    1.2.13
+Version:    1.2.15.2
 Release:    1
 License:    GPLv2+
-URL:        http://www.alsa-project.org/
+URL:        https://github.com/sailfishos/alsa-utils
 Source0:    %{name}-%{version}.tar.gz
 Source1:    alsaunmute
 Source2:    alsaunmute.1
